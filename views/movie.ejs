@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style></style>
+</head>
+
+<body>
+    <main>
+        <main>
+            <div class="login">
+                <div class="container">
+                    <p>Movie Form</p>
+                    <div class="row">
+                        <div class="w-6">
+                            <form action="/addData" method="post" class="login-form" enctype="multipart/form-data">
+
+                                <label for="name">Movie Name</label>
+                                <input type="text" name="name">
+
+                                <label for="description">Description</label>
+                                <textarea name="description" cols="30" rows="3"></textarea>
+
+                                
+                                <label for="lang">Languages</label>
+                                <select name="lang">
+                                    <option value="English">English</option>
+                                    <option value="Hindi">Hindi</option>
+                                    <option value="Gujarati">Gujarati</option>
+                                    <option value="Urdu">Urdu</option>
+                                </select>
+                                
+
+                                <label for="rating">IMDB Rating / 10</label>
+                                <input type="text" name="rating">
+                                
+                                <label for="quality">Quality</label>
+                                <select name="quality">
+                                    <option value="1080p">1080p</option>
+                                    <option value="720p">720p</option>
+                                    <option value="480p">480p</option>
+                                </select>
+
+                                <label for="image">Choose Image</label>
+                                <input type="file" name="image">
+                                
+                                <input type="submit" class="submit-btn">
+                                
+                            </form>
+                        </div>
+                        <div class="w-6"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </main>
+</body>
+
+</html>

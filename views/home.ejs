@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="w-12">
+                    <div class="navbar">
+                        <div class="logo">
+                            <img src="images/logo.png" alt="logo">
+                        </div>
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">About</a>
+                                </li>
+                                <li>
+                                    <a href="#">Most Populer</a>
+                                </li>
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">Help</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="btn">
+                            <a href="/addMovie">
+                                Add Movies
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="home-banner">
+            <div class="container h-100">
+                <div class="row">
+                    <% list.forEach((d)=> { %>
+                        <div class="w-3 ">
+                            <div class="card">
+                                <div class="card-detail">
+                                    <div class="img">
+                                        <img src="<%= d.image %>" alt="logo">
+                                    </div>
+                                    <div class="card-contant">
+                                        <h3>Movie :- <%= d.name %></h3>
+                                        <p>Description :- <%= d.description %></p>
+                                        <span>Lang :- <%= d.lang %></span>
+                                        <span>IMDB Rating :- <%= d.rating %></span>
+                                        <span>Quality :- <%= d.quality %></span>
+                                        <div class="buttons d-flex">
+                                            <a href="/editDoc/<%= d.id %>" class="btn-primary green">Edit</a>
+                                            <a href="/deleteDoc/<%= d.id %>" class="btn-primary red">Delete</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <% }) %>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

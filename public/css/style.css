@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'lato';
+
+}
+
+.container {
+    width: 1320px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.h-100{
+    padding-top: 120px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+
+.w-1 {
+    width: 8.33%;
+}
+
+.w-2 {
+    width: 16.66%;
+}
+
+.w-3 {
+    width: 25%;
+}
+
+.w-4 {
+    width: 33.33%;
+}
+
+.w-5 {
+    width: 41.66%;
+}
+
+.w-6 {
+    width: 50%;
+}
+
+.w-7 {
+    width: 58.33%;
+}
+
+.w-8 {
+    width: 66.66%;
+}
+
+.w-9 {
+    width: 75%;
+}
+
+.w-10 {
+    width: 83.33%;
+}
+
+.w-11 {
+    width: 91.66%;
+}
+
+.w-12 {
+    width: 100%;
+}
+
+.w-1,
+.w-2,
+.w-3,
+.w-4,
+.w-5,
+.w-6,
+.w-7,
+.w-8,
+.w-9,
+.w-10,
+.w-11,
+.w-12 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+header {
+    padding-left: 15px;
+    padding-right: 15px;
+    /* display: flex;
+    align-items: center; */
+    align-content: center;
+    background-color: black;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+}
+
+.navbar {
+    width: 1320px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+}
+
+nav {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0px 20px;
+}
+
+nav ul li a:hover {
+    color: #e747a2;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: 0.2s all;
+}
+
+.btn {
+    background-color: #cb1a7f;
+    padding: 10px 25px;
+    border-radius: 10px;
+    transition: 0.2s all;
+    color: #fff;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #e54ba2;
+    color: #121212;
+}
+
+.btn a {
+    color: #fff;
+    text-decoration: none;
+
+}
+.btn-primary{
+    width: 120px;
+    display: block!important;
+    background-color: #06892d;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    margin: 0 auto;
+    padding: 6px 15px;
+    border-radius: 8px;
+    transition: 0.3s all;
+}
+.btn-primary:hover{
+    background-color: #06571f;
+}
+.red{
+    background-color: red;
+}
+.red:hover{
+    background-color: rgb(103, 5, 5);
+}
+
+.banner {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    content: "";
+    background-image: url("../images/banner-1.jpeg");
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.banner-contant {
+    margin-top: 150px;
+}
+
+.banner-contant img {
+    width: 450px;
+    margin-bottom: 50px;
+}
+
+.banner-contant .text-area p {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.banner-contant .text-area span {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.banner-contant .btn {
+    margin-top: 20px;
+}
+
+
+ 
+.login{
+    position: absolute;
+    background-image: url("../images/banner-3.jpg");
+    content: '';
+    height: 100vh;
+    width: 100vw;
+    background-position: top  center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+.login p{
+    font-size: 30px;
+    font-weight: 800;
+    
+}
+.login form{
+    padding: 50px 40px;
+    border-radius: 20px;
+}
+.login-form{
+    margin: 30px 0px;
+}
+input , label{
+    display: block;
+}
+
+.login form{
+    background-color: #184649;
+    
+    color: #fff;
+} 
+
+
+/* Apply styles to form container */
+.login {
+    /* background: #f4f4f4; */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Apply styles to form elements */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 25px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="time"],
+select,
+textarea,
+input[type="number"] {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-family: 'Lato', sans-serif;
+}
+
+select {
+    background: #f9f9f9;
+}
+
+/* Apply unique and colorful styles to the form elements */
+input[type="text"],
+input[type="password"],
+textarea,
+input[type="time"],
+select,
+input[type="number"] {
+    background: #fff;
+    color: #333;
+}
+input[type="file"]{
+    margin-top: 15px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+input[type="time"]:focus,
+select:focus,
+input[type="number"]:focus {
+    background: #e0e0e0;
+    border: 1px solid #007BFF;
+}
+
+input[type="submit"] {
+    background: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background: #0056b3;
+}
+
+/* Add unique styling to labels or specific form elements as desired */
+label[for] {
+    color: #fff;
+    /* Change the label color for Movie Name */
+}
+
+
+.submit-btn{
+    display: inline-block;
+    background-color: #cb1a7f!important;
+    display: inline-block!important;
+    margin-top: 50px;
+}
+
+
+
+.card{
+    display: flex;
+}
+.card-detail{
+    background-color: #cb1a7f;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.card-detail .img img{
+    width: 100%;
+}
+
+.card .card-contant{
+    color: #fff;
+    padding: 20px 15px;
+}
+.card .card-contant p{
+    margin-top: 5px;
+    font-weight: 600;
+}
+.card .card-contant span{
+    display: block;
+    margin-top: 5px;
+}
+.buttons{
+    margin-top: 25px;
+}
